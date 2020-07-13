@@ -1,0 +1,156 @@
+h1 {
+  text-align: center;
+  display: block;
+}
+
+h2{
+  display: inline;
+  margin:0 150px;
+}
+
+h2.winner {
+  margin: 30px auto;
+}
+
+.boardContainer {
+  display: flex;
+  height: 50%;
+  width: 60%;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.Container {
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  width: 350px;
+  height: 200px;
+  align-content: center;
+}
+
+.Disable {
+  animation-name: containerDisable;
+  animation-duration: 4s;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.DisableBtn{
+  animation-name: buttonDisable;
+  animation-duration: 4s;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes containerDisable {
+  from {
+    visibility: visible;
+    opacity: 1;
+    height: 200px;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+    height: 0px;
+  }
+}
+
+@keyframes buttonDisable {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.gameContainer {
+  text-align: center;
+}
+
+.gameProperties{
+  text-align: center;
+  margin: 0 auto;
+ }
+
+ .flipBtn {
+   display: flex;
+   left: 47.7%;
+   top: 71%;
+   position: absolute;
+   align-self: flex-end;
+   
+   margin-bottom: 2px;
+   box-shadow:inset 0px -3px 7px 0px #29bbff;
+   background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+   background-color:#2dabf9;
+   border-radius:3px;
+   border:1px solid #0b0e07;
+   display:inline-block;
+   cursor:pointer;
+   color:#ffffff;
+   
+   font-size:15px;
+   padding:3px 15px;
+   text-decoration:none;
+   text-shadow:0px 1px 0px #263666;
+ }
+ 
+ .flipBtn:hover {
+	background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+	background-color:#0688fa;
+}
+
+ .startBtn {
+  box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	background-color:#ffffff;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+  text-shadow:0px 1px 0px #ffffff;
+  margin: 2px;
+ }
+
+ .startBtn:hover {
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	background-color:#f6f6f6;
+}
+
+ .resetBtn {
+  box-shadow:inset 0px 1px 0px 0px #f7c5c0;
+	background:linear-gradient(to bottom, #fc8d83 5%, #e4685d 100%);
+	background-color:#fc8d83;
+	border-radius:6px;
+	border:1px solid #d83526;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+  text-shadow:0px 1px 0px #b23e35;
+  margin: 3px auto;
+  display: block;
+ }
+
+ .resetBtn:hover {
+	background:linear-gradient(to bottom, #e4685d 5%, #fc8d83 100%);
+	background-color:#e4685d;
+}

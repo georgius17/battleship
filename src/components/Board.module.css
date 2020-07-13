@@ -1,0 +1,70 @@
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(10, 35px);
+    grid-template-rows: repeat(10, 35px);
+    background-color: hsla(240, 79%, 68%, 0.52);
+    padding: 10px;
+    justify-content: center;
+    border: 1px solid hsla(0, 0%, 40%, 0.62);
+    box-shadow: 6px 8px 5px 0px rgba(106,113,156,0.52);
+    margin:0 10px;
+    border-radius: 10px;
+}
+
+.gridItem {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid hsla(0, 0%, 40%, 0.62);
+    font-size: 15px;
+    text-align: center;
+}
+
+.gridItemShip {
+    background-color: black;
+    border: 1px solid hsla(0, 0%, 40%, 0.62);
+    font-size: 15px;
+    text-align: center;
+}
+
+.gridHittedItem {
+    background-color: rgba(204, 177, 177, 0.8);
+    border: 1px solid hsla(0, 8%, 42%, 0.62);
+    font-size: 15px;
+    text-align: center;
+}
+
+.gridItemSunkShip {
+    border: 1px solid hsla(0, 0%, 40%, 0.62);
+    font-size: 15px;
+    text-align: center;
+    background-color: rgb(71, 7, 7);
+    animation-name: sunkShip;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+  @keyframes sunkShip {
+    from {
+        background-color: rgb(236, 45, 45);
+        border: 0px solid black;
+    }
+    to {
+        background-color: rgb(148, 13, 13);
+        border: 1px solid black;
+    }
+  }
+
+.true {
+    background-color: rgb(33, 86, 146);
+}
+
+.gridInvisibleItem {
+    background-color: rgba(139, 109, 109, 0.8);
+    border: 1px solid hsla(0, 11%, 2%, 0.644);
+    font-size: 15px;
+    text-align: center;
+}
+
+
+

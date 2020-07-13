@@ -1,0 +1,43 @@
+.shipPart {
+    width: 35px;
+    height: 35px;
+    background-color: black;
+}
+
+.shipPartHovered {
+    width: 35px;
+    height: 35px;
+    background-color: hsla(0, 0%, 0%, 0.73);
+    animation-name: hoverShip;
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.shipBody {
+    display: flex;
+    color: none;
+    margin: 3px auto;
+    cursor: pointer;
+    padding: 1px;
+    box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.46);
+}
+
+.X {
+    flex-direction: row;
+}
+
+.Y {
+    flex-direction: column;
+}
+
+
+  @keyframes hoverShip {
+    from {
+        background-color: black;
+    }
+    to {
+        background-color:  hsla(0, 0%, 0%, 0.73);
+    }
+  }
